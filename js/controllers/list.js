@@ -11,7 +11,7 @@
 			vm.changeActiveTurtle = changeActiveTurtle;
 
 			function changeActiveTurtle(index) {
-				vm.activeTurtl = index;
+				vm.activeTurtle = index;
 			}
 		}
 

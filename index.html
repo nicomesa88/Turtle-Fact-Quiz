@@ -39,8 +39,7 @@
 								<button class="btn btn-primary pull-right"
 									data-toggle="modal"
 									data-target="#turtle-info"
-									ng-click="list.changeActiveTurtle(turtle)"
-									>Learn More</button>
+									ng-click="list.changeActiveTurtle(turtle)">Learn More</button>
 							</div>
 						</div>
 					</div>
@@ -48,6 +47,16 @@
 			</div>
 		</div>
 
+		<div class="modal" id="turtle-info">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h2>{{list.activeTurtle.type}}</h2>
+				</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 	<!-- third party js -->
