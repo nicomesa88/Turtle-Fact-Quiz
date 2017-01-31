@@ -3,22 +3,24 @@
 		.module("turtleFacts")
 		.controller("listCtrl", listController);
 
-		function listController(){
+		listController.$inject = ['quizMetrics'];
+
+		function listController(quizMetrics){
 			var vm = this;
 
+			vm.quizMetrics = quizMetrics
 			vm.data = turtlesData;
 			vm.activeTurtle = {};
 			vm.changeActiveTurtle = changeActiveTurtle;
 			vm.activateQuiz = activateQuiz;
 			vm.search = "";
-			vm.quizActive = false;
 
 			function changeActiveTurtle(index) {
 				vm.activeTurtle = index;
 			}
 
 			function activateQuiz() {
-				vm.quizActive = true;
+				quizMetrics.changeState(true);
 			}
 		}
 

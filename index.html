@@ -22,7 +22,7 @@
 			</h3>
 		</div>
 
-		<div ng-controller="listCtrl as list" ng-hide="list.quizActive">
+		<div ng-controller="listCtrl as list" ng-hide="list.quizMetrics.quizActive">
 			<form class="form-inline well well-sm clearfix">
 				<span class="glyphicon glyphicon-search"></span>
 				<input
@@ -89,7 +89,9 @@
 			</div>
 		</div><!-- List Controller -->
 
-		<div ng-controller="quizCtrl as quiz"></div>
+		<div ng-controller="quizCtrl as quiz" ng-show="quiz.quizMetrics.quizActive">
+			<h1>Quiz</h1>
+		</div>
 
 	</div>
 
