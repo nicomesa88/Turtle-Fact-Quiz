@@ -13,7 +13,7 @@
 	var turtlesData = [
 			{
 				type: "Green Turtle",
-				image_url: "http://www.what-do-turtles-eat.com/wp-content/uploads/2014/10/Sea-Turtles-Habitat.jpg",
+				image_url: "http://yourshot.nationalgeographic.com/u/ss/fQYSUbVfts-T7pS2VP2wnKyN8wxywmXtY0-FwsgxpixPqlhegyCHuOJnySIUH8Kebfy2sfQxwhGQv0kyUdax/",
 				locations: "Tropical and subtropical oceans worldwide",
 				size: "Up to 1.5m and up to 300kg",
 				lifespan: "Over 80 years",

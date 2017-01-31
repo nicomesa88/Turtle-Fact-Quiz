@@ -36,7 +36,11 @@
 								<p><strong>Size: </strong>{{turtle.size}}</p>
 								<p><strong>Average Lifespan: </strong>{{turtle.lifespan}}</p>
 								<p><strong>Diet: </strong>{{turtle.diet}}</p>
-								<button class="btn btn-primary pull-right">Learn More</button>
+								<button class="btn btn-primary pull-right"
+									data-toggle="modal"
+									data-target="#turtle-info"
+									ng-click="list.changeActiveTurtle(turtle)"
+									>Learn More</button>
 							</div>
 						</div>
 					</div>
