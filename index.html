@@ -95,7 +95,11 @@
 					<h4>Progress:</h4>
 					<div class="btn-toolbar">
 						<button class="btn"
-							ng-repeat="question in quiz.dataService.quizQuestions"></button>
+							ng-repeat="question in quiz.dataService.quizQuestions"
+							ng-class="{'btn-info': question.selected !== null, 'btn-danger': question.selected === null}">
+							<span class="glyphicon"
+								ng-class="{'glyphicon-pencil': question.selected !== null, 'glyphicon-question-sign': question.selected === null}"></span>
+						</button>
 					</div>
 				</div>
 			</div>
