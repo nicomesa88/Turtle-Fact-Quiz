@@ -12,7 +12,7 @@
 			return dataObj;
 		}
 
-		var quizQuestions  = [
+		var quizQuestions = [
 			{
 				type: "text",
 				text: "How much can a loggerhead weigh?",
